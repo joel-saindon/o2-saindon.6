@@ -1,0 +1,35 @@
+Joel Saindon
+CS 4760, Proj 6
+Page Table
+
+Files that should be in this directory:
+	-main.c
+	-oss.c
+	-user.c
+	-info.h
+	-Makefile
+	-logfile* (if ran with defaults)
+	-hidden .git directory
+	-this README
+
+Getting started: Type the command: make proj6
+	Files should compile and you should be left with 3 executables in the directory: proj6, oss, and user.
+
+Running proj6: please type the options in the order you see here: ./proj6 -s x -l filename
+	I ran into some trouble getting the optarg to work with global variables and forked items so the argvs are hardcoded in array positions
+
+Items implemented
+	-Logging (maybe not complete, but definitely in a workable state)
+	-Shared memory initialization and cleanup
+	-Semaphore init (not completely finished in usage)
+	-Shared memory message queue/message passing from user to oss
+	-Setting of logfiles/maxproc by passing arguments OR running with defaults
+	-User usage of shared memory
+
+Things not implemented in this project:
+	-Complete usage of page table (struct initialized)
+
+Notes:
+	-Definitely felt better with my understanding of shared memory/message queues/IPC after this one and I feel like I have a way better representation of it in this project; despite not getting all the way through the final pieces of using the page table.
+	-I appreciate the extension, honestly. It really helped me nail down some of the stuff I had fallen a little behind on.
+	-It's not very polished, and there may be a few debug items still left uncommented, but I've eaten up enough time and need to get this turned in.
